@@ -68,6 +68,14 @@ npm i -g vercel
 vercel
 ```
 
+
+### 배포 전 확인
+
+- 저장소 루트에 `package.json`, `vite.config.ts`, `vercel.json`이 있어야 합니다.
+- Vercel의 **Root Directory**는 비워 두거나 이 프로젝트 폴더로 지정합니다.
+- Node.js 버전은 `22.x`를 사용합니다.
+- 별도의 환경 변수 없이 기본 기능이 동작합니다.
+
 ## 🛠️ 기술 스택
 
 - **Frontend**: React 19 + TypeScript
