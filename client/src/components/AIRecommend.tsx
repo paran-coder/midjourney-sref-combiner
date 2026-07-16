@@ -89,7 +89,7 @@ export function AIRecommend({ onRecommendation }: AIRecommendProps) {
           <Sparkles className="w-5 h-5 text-primary" />
           AI 추천
         </CardTitle>
-        <CardDescription>원하는 스타일을 설명하면 AI가 추천해줍니다</CardDescription>
+        <CardDescription>스타일 키워드를 바탕으로 검수된 SREF DB에서 조합을 추천합니다</CardDescription>
       </CardHeader>
       <CardContent className="space-y-4">
         {/* Input */}
@@ -177,7 +177,7 @@ export function AIRecommend({ onRecommendation }: AIRecommendProps) {
 
         {/* Help Text */}
         <p className="text-xs text-muted-foreground">
-          💡 팁: 스타일, 감정, 색상, 기법 등을 포함하여 설명하면 더 정확한 추천을 받을 수 있습니다.
+          💡 팁: portrait, anime, minimal, warm 같은 키워드를 포함하면 동일 키워드에 일관된 DB 조합이 선택됩니다.
         </p>
       </CardContent>
     </Card>

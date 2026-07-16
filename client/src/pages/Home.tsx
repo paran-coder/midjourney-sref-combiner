@@ -9,6 +9,7 @@ import { Zap, Copy, Sparkles, Clock, Settings } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import type { StylePreset } from "@/lib/presets";
 import type { SrefCode } from "@/lib/srefGenerator";
+import { SREF_DATABASE_SIZE } from "@/lib/srefDatabase";
 
 /**
  * Home Page
@@ -67,13 +68,13 @@ export default function Home() {
             <div className="space-y-2">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-primary/10 border border-primary/20 text-sm text-primary font-medium">
                 <Sparkles className="w-4 h-4" />
-                AI 기반 스타일 참조 생성기
+                DB · 랜덤 · 혼합 SREF 생성기
               </div>
               <h2 className="text-3xl md:text-4xl font-bold text-foreground leading-tight">
                 새로운 스타일을 발견하세요
               </h2>
               <p className="text-base text-muted-foreground max-w-2xl mx-auto">
-                미드저니의 스타일 참조 코드를 무작위로 생성하고 조합하여 독특한 창작 영감을 찾아보세요.
+                검수된 {SREF_DATABASE_SIZE.toLocaleString()}개 DB 코드, 새로운 6자리 임의 코드, 또는 두 방식을 섞은 조합을 생성해보세요.
               </p>
             </div>
           </div>
@@ -166,9 +167,9 @@ export default function Home() {
               <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mx-auto group-hover:bg-primary/20 transition-all duration-300">
                 <Sparkles className="w-6 h-6 text-primary" />
               </div>
-              <h3 className="text-lg font-semibold text-foreground">무작위 생성</h3>
+              <h3 className="text-lg font-semibold text-foreground">3가지 생성 모드</h3>
               <p className="text-sm text-muted-foreground">
-                매번 새로운 sref 코드 조합을 생성하여 무한한 창작 가능성을 탐험하세요.
+                DB 전용, 6자리 완전 랜덤, DB와 랜덤을 함께 쓰는 혼합 모드 중 목적에 맞게 선택합니다.
               </p>
             </div>
 
@@ -179,7 +180,7 @@ export default function Home() {
               </div>
               <h3 className="text-lg font-semibold text-foreground">AI 추천</h3>
               <p className="text-sm text-muted-foreground">
-                원하는 스타일을 설명하면 AI가 최적의 sref 코드 조합을 추천해줍니다.
+                스타일 키워드를 입력하면 검수된 DB 안에서 일관된 코드 조합을 추천합니다.
               </p>
             </div>
 
