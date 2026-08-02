@@ -1,10 +1,11 @@
 /**
  * Midjourney Korea SREF code database
  *
- * Source workbook: midjourney_korea_sref_codes.xlsx
- * Imported: 2026-07-16
- * Reviewed unique codes: 778
- * Explicitly excluded codes in source workbook: 2
+ * Sources:
+ * - midjourney_korea_sref_codes.xlsx (imported 2026-07-16)
+ * - user-supplied additions (imported 2026-08-03)
+ * Reviewed unique codes: 837
+ * Existing workbook exclusions: 2
  *
  * Codes are stored as strings because valid SREF identifiers can have
  * different digit lengths (for example, "3" is a reviewed source entry).
@@ -788,13 +789,73 @@ export const SREF_CODES = [
   "908963",
   "286580",
   "251160",
+  "3186922520",
+  "1938142599",
+  "3126422357",
+  "1636187491",
+  "2354286329",
+  "4279378489",
+  "2082504830",
+  "2446808103",
+  "2533808451",
+  "1407594300",
+  "125392732",
+  "882099493",
+  "1786945130",
+  "2979786966",
+  "4094740976",
+  "1254428622",
+  "2569822313",
+  "42780966",
+  "407314586",
+  "2636116336",
+  "1243713023",
+  "4282282105",
+  "1664242753",
+  "2031376966",
+  "3623850304",
+  "3372067758",
+  "3169517328",
+  "3486953960",
+  "1620192228",
+  "2596889884",
+  "2187732243",
+  "2921367196",
+  "3169921251",
+  "3962115437",
+  "984928173",
+  "1025158517",
+  "7983081597",
+  "3959988404",
+  "838418117",
+  "1982769432",
+  "3326829432",
+  "2588640818",
+  "1699009422",
+  "1235558871",
+  "2189815634",
+  "28716490",
+  "3859943964",
+  "1797352086",
+  "2308724876",
+  "1168432014",
+  "3694533790",
+  "3930069370",
+  "100535674",
+  "4145962190",
+  "1104907777",
+  "4197443709",
+  "658450503",
+  "3181942011",
+  "4371870492",
 ] as const;
 
 export const SREF_DATABASE_SIZE = SREF_CODES.length;
 
 export const SREF_DATABASE_META = {
-  source: "Midjourney Korea",
+  source: "Midjourney Korea + user additions",
   importedAt: "2026-07-16",
+  updatedAt: "2026-08-03",
   reviewedUniqueCodes: SREF_DATABASE_SIZE,
   excludedCodes: 2,
 } as const;
