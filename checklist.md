@@ -1,13 +1,21 @@
-# 작업 체크리스트
+# 작업 체크리스트 — v1.5.0
 
-- [x] v1.4.0 프로그램 DB 837개 확인
-- [x] 기존 엑셀 778개 구조와 서식 확인
-- [x] `sref_codes` 시트를 837개로 동기화
-- [x] 사용자 입력 SREF 출현 73회를 `출현_근거`에 추가
-- [x] `4371870492` 재등록 이력 기록
-- [x] `요약` 시트 통계와 동기화 내역 갱신
-- [x] 엑셀 서식·가독성 검토
-- [x] TypeScript DB와 엑셀 값·순서 일치 검증
-- [x] 엑셀 수식 오류 검사
-- [x] 시맨틱 버전 `v1.4.1` 적용
-- [x] 압축 파일 무결성 검사
+- [x] 작업 문서 4종 선행 생성/갱신
+- [x] 기존 837개 DB를 `data/imports` 기반 원본으로 마이그레이션
+- [x] TXT 파서 구현 (`--sref`, 다중 코드, `::weight`, `--niji`, `--v`, `--profile`)
+- [x] 파일/행 출처 메타데이터 보존
+- [x] 전체 import 파일 통합 및 코드 중복 제거
+- [x] 자동 생성 `client/src/data/sref-database.json` 구현
+- [x] 기존 `srefDatabase.ts`를 JSON 호환 래퍼로 변경
+- [x] JSON 기준 Excel 자동 생성 구현
+- [x] `package.json`에 DB 생성 build/dev/check 연결
+- [x] 기존 837개 값·순서 회귀 검증
+- [x] 신규 TXT 추가 시 DB 자동 증가 테스트
+- [x] 중복 TXT 데이터의 코드 중복 방지 테스트
+- [x] 메타데이터 추출 테스트
+- [x] 핵심 TypeScript strict 검사
+- [x] 전체 TS/TSX 구문 검사
+- [x] Excel 구조/무결성/렌더링 검증
+- [x] README / User manual 최종 사용법 반영
+- [x] 시맨틱 버전 `1.5.0` 적용
+- [x] 최종 ZIP 무결성 검사
