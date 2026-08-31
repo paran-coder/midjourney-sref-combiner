@@ -1,15 +1,17 @@
 {
   "name": "midjourney_sref_combiner",
-  "version": "1.4.1",
+  "version": "1.5.0",
   "type": "module",
   "license": "MIT",
   "scripts": {
-    "dev": "vite --host",
-    "build": "vite build",
+    "dev": "node scripts/build-sref-db.mjs && vite --host",
+    "build": "node scripts/build-sref-db.mjs && vite build",
     "start": "vite preview --host",
     "preview": "vite preview --host",
-    "check": "tsc --noEmit",
-    "format": "prettier --write ."
+    "check": "node scripts/build-sref-db.mjs && tsc --noEmit",
+    "format": "prettier --write .",
+    "generate:sref": "node scripts/build-sref-db.mjs",
+    "test:sref": "node scripts/test-sref-pipeline.mjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",
